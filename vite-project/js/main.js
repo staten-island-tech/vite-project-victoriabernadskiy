@@ -1,5 +1,6 @@
 import "../css/style.css";
-import {Menu, Name} from "./menu";
+import {Menu, Name} from "./menu.js";
+
 
 console.log(Menu, Name);
 /* import javascriptLogo from './javascript.svg'
