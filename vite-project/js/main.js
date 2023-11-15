@@ -1,8 +1,7 @@
 import "../css/style.css";
-import {Menu, Name} from "./menu.js";
+import {books} from "./menu.js";
 
 
-console.log(Menu, Name);
 /* import javascriptLogo from './javascript.svg'
 import viteLogo from '/vite.svg'
 import { setupCounter } from './counter.js'
