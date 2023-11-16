@@ -25,3 +25,9 @@ document.querySelector('#app').innerHTML = `
 `
 
 setupCounter(document.querySelector('#counter')) */
+
+function BookInfo() {
+  const make = [
+    
+  ]
+}
