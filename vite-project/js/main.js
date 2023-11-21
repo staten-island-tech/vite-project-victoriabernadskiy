@@ -26,7 +26,7 @@ document.querySelector('#app').innerHTML = `
 
 setupCounter(document.querySelector('#counter')) */
 
-document.querySelector(".body").addEventListener("click", function () {
+document.querySelector("body").addEventListener("click", function () {
   if (document.body.classList.contains("cool")) {
     document.body.classList.add("warm");
     document.body.classList.remove("cool");

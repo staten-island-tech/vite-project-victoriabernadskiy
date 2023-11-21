@@ -33,7 +33,7 @@ body,
   --primary: var(--light-blue);
   --secondary: var(--dark-blue);
 }
-.hero {
+body {
   background-color: var(--primary);
 }
 .main {
