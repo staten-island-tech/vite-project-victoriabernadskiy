@@ -1,10 +1,10 @@
-body,
+/* body,
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
   font-size: 62.5%;
-}
+} */
 
 :root {
   --black: #000;
@@ -14,16 +14,10 @@ body,
   --dark-red: #dc2626;
   --gray: #252c30;
 
-  /*Intentions */
+
   --primary: var(--light-blue);
   --secondary: var(--dark-blue);
 
-  /*Typography */
-  --h1: 7.594rem;
-  --h2: 5.063rem;
-  --h3: 3.375rem;
-  --h4: 2.25rem;
-  --h5: 1.5rem;
 }
 .warm {
   --primary: var(--light-red);
@@ -38,7 +32,10 @@ body {
 }
 .main {
   background-color: var(--secondary);
-  height: 90vh;
+  height: 60vh;
+}
+.flex-containor {
+background-color: var(--gray);
 }
 
 

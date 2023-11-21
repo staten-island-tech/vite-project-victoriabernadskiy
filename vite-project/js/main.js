@@ -1,4 +1,5 @@
 import "../css/style.css";
+import { DOMSelectors } from "./Dom";
 import {books} from "./menu.js";
 
 
@@ -26,7 +27,7 @@ document.querySelector('#app').innerHTML = `
 
 setupCounter(document.querySelector('#counter')) */
 
-document.querySelector("body").addEventListener("click", function () {
+document.querySelector(".btn").addEventListener("click", function () {
   if (document.body.classList.contains("cool")) {
     document.body.classList.add("warm");
     document.body.classList.remove("cool");
@@ -35,3 +36,9 @@ document.querySelector("body").addEventListener("click", function () {
     document.body.classList.remove("warm");
   }
 });
+
+DOMSelectors.card_form.addEventListener("click",(event) => {
+  event.preventDefault()
+
+})
+
