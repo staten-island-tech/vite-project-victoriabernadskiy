@@ -5,6 +5,7 @@ const books = [
       authorLast: "Lee",
       publishDate: 1960,
       genre: ["mystery", "historical", "fiction"],
+  
     },
     {
       name: "The Great Gatsby",
