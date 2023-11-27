@@ -42,3 +42,24 @@ DOMSelectors.card_form.addEventListener("click",(event) => {
 
 })
 
+function createBookCard(book) {
+  const card = document.createElement('div');
+  card.classList.add('book-card');
+  card.innerHTML = `
+    <h2>${book.name}</h2>
+    <p>${book.authorFirst} ${book.authorLast}</p>
+    <p>Published: ${book.publishDate}</p>
+    <p>Genres: ${book.genre}</p>
+  `;
+  return card;
+}
+
+function makeBookCards() {
+  const app = document.getElementById('app');
+  books.forEach(book => {
+    const card = createBookCard(book);
+    app.appendChild(card);
+  });
+}
+
+document.addEventListener('DOMContentLoaded', makeBookCards);
