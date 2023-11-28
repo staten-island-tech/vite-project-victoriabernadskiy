@@ -37,7 +37,7 @@ body {
 .flex-containor {
 background-color: var(--gray);
 }
-#popbtn, #simbtn, #ratebtn, #datebtn, #main {
+#popbtn, #simbtn, #ratebtn, #datebtn, #main, #btn {
   
     width: 100%;
     max-width: 200px;
@@ -60,6 +60,8 @@ background-color: var(--gray);
   height: 35vh; 
   margin: 40px;
 }
+
+
 
 #app {
   width: 20%;
