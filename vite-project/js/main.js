@@ -3,8 +3,6 @@ import { DOMSelectors } from "./Dom";
 import {books} from "./menu.js";
 
 
-
-
 document.querySelector("#btn").addEventListener("click", function () {
   if (document.body.classList.contains("cool")) {
     document.body.classList.add("warm");
@@ -15,27 +13,92 @@ document.querySelector("#btn").addEventListener("click", function () {
   }
 });
 
-DOMSelectors.card_form.addEventListener("click",(event) => {
-  event.preventDefault()
+let current_arr = "books"
 
+function Insert(arr) {
+  arr.forEach((book) => {
+    DOMSelectors.card_holder.insertAdjacentHTML('afterbegin', 
+    `  <div class="card">
+    <h1 class="name">${book.name}</h1>
+    <h2 class="author">${book.authorFirst} ${book.authorLast}</h2>
+    <h2 class="publishDate">${book.publishDate}</h2>
+    <h2 class="genre">${book.genre}</h2>
+  </div>`)});
+}
+
+const deleteBooks = function() {
+  DOMSelectors.card_holder.innerHTML = ''
+}
+
+Insert(books)
+
+
+const mystery = books.filter((books) => books.genre.includes("mystery"))
+const historical = books.filter((books) => books.genre.includes("historical"))
+const stupid = books.map((book) => ({
+  ...book,
+  name: `Stupid ${book.name}`
+}))
+const dystopian = books.filter((books) => books.genre.includes("dystopian"))
+const fantasy = books.filter((books) => books.genre.includes("fantasy"))
+
+DOMSelectors.mysbtn.addEventListener("click", function(){
+  if (current_arr === "mystery") {
+    deleteBooks()
+    Insert(books)
+    current_arr = "books"
+  } else {
+    current_arr = "mystery"
+    deleteBooks()
+    Insert(mystery)
+  }  
 })
 
+DOMSelectors.hisbtn.addEventListener("click", function(){
+  if (current_arr === "historical") {
+    deleteBooks()
+    Insert(books)
+    current_arr = "books"
+  } else {
+    current_arr = "historical"
+    deleteBooks()
+    Insert(historical)
+  }  
+})
 
+DOMSelectors.stupidbtn.addEventListener("click", function(){
+  if (current_arr === "stupid") {
+    deleteBooks()
+    Insert(books)
+    current_arr = "books"
+  } else {
+    current_arr = "stupid"
+    deleteBooks()
+    Insert(stupid)
+  }  
+})
 
+DOMSelectors.dysbtn.addEventListener("click", function(){
+  if (current_arr === "dystopian") {
+    deleteBooks()
+    Insert(books)
+    current_arr = "books"
+  } else {
+    current_arr = "dystopian"
+    deleteBooks()
+    Insert(dystopian)
+  }  
+})
 
+DOMSelectors.fanbtn.addEventListener("click", function(){
+  if (current_arr === "fantasy") {
+    deleteBooks()
+    Insert(books)
+    current_arr = "books"
+  } else {
+    current_arr = "fantasy"
+    deleteBooks()
+    Insert(fantasy)
+  }  
+})
 
-
-document.addEventListener('DOMContentLoaded', makeBookCards);
-
-function Insert(arr){
-  arr.forEach((book) => 
-  document.querySelector.insertAdjacentHTML("afterbegin", `<div class="card">
-  <h1 class="name">${book.name}</h1>
-  <h2 class="authorFirst">${book.publishDate}</h2>
-  <h2 class="authorLast">${book.genre}</h2>
-  <img src="city" alt=""> 
-  </div>`))}
-
-  Insert(books)
-
-  const main = books.filter((books) => books.genre === "")
