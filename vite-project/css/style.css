@@ -8,47 +8,49 @@
 
 :root {
   --black: #000;
-  --light-blue: #C9DCAF;
-  --dark-blue: #BF9E86;
-  --light-red: #CEC9DF;
-  --dark-red: #FDF1CA;
-  --gray: #252c30;
+  --light-blue: #1F2833;
+  --dark-blue: #66FCF1;
+  --light-red: rgb(249, 136, 192);
+  --dark-red: #faadcf;
+  --gray: rgb(244, 100, 186);
+  --new-blue: #2f7a77;
 
 
   --primary: var(--light-blue);
   --secondary: var(--dark-blue);
+  --third: var(--new-blue);
 
 }
 .warm {
   --primary: var(--light-red);
   --secondary: var(--dark-red);
+  --third: var(--gray)
 }
 .cool {
   --primary: var(--light-blue);
   --secondary: var(--dark-blue);
+  --third: var(--new-blue)
 }
 body {
   background-color: var(--primary);
+  font-family: 'Hedvig Letters Serif', serif;
+  font-family: 'IBM Plex Serif', serif;
 }
-.main {
-  background-color: var(--secondary);
-  height: 60vh;
-}
-.flex-containor {
-background-color: var(--gray);
-}
+
 .button {
   
     width: 100%;
-    max-width: 200px;
-    padding: 10px;
+    max-width: 150px;
+    padding: 15px;
+    margin: 10px;
     border: 2px solid #ccc;
     border-radius: 10px;
-    background-color: #f5f5f5;
-    color: #333;
-    font-size: 16px;
+    background-color: var(--third);
+    font-size: 20px;
     font-family: 'Indie Flower', cursive;
     font-family: 'Josefin Sans', sans-serif;
+    cursor: pointer;
+    transition: background-color 0.3s, box-shadow 0.3s;
   
 }
 
@@ -58,41 +60,24 @@ background-color: var(--gray);
   align-items: center;
   justify-content: center;
   height: 35vh; 
-  margin: 40px;
+  margin: 20px;
 }
 
-
-
-#app {
-  width: 20%;
-  height: 20%;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  background-color: rgb(102, 138, 102);
-  justify-content: space-around;
-  border: 3px black;
-  margin: 30px;
-  margin-top: 5%;
-  border-radius: 15px;
-  box-shadow: 10px 10px 10px rgb(69, 97, 70);
-  transition: all 0.3s;
-}
 
 .card {
     width: 20%;
-    height: 20%;
+    height: 50%;
     display: flex;
-    flex-direction:column ;
-    align-items: center;
-    background-color: rgb(102, 138, 102);
+    flex-direction: column;
+    background-color: var(--secondary);
     justify-content: space-around;
     border: 3px black;
     margin: 30px;
     margin-top: 5%;
     border-radius: 15px;
-    box-shadow: 10px 10px 10px rgb(69, 97, 70);
   }
+
+ 
 
   #card_holder {
     display: flex;
@@ -102,4 +87,23 @@ background-color: var(--gray);
 
   .name {
     text-align: center;
+    font-size: 40px;
+  }
+
+  .title {
+    font-size: 3.2rem;
+    text-align: center;
+    margin: 0 auto;
+    width: fit-content;
+    height: fit-content;
+    background-color: var(--secondary);
+  }
+
+  .button:hover {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Shadow properties */
+  }
+
+  h2 {
+    text-align: left;
+    margin-left: 20px;
   }

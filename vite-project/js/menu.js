@@ -4,7 +4,7 @@ const books = [
       authorFirst: "Harper",
       authorLast: "Lee",
       publishDate: 1960,
-      genre: ["mystery", "historical", "fiction"],
+      genre: ["mystery", "historical", " fiction"],
   
     },
     {
@@ -12,28 +12,28 @@ const books = [
       authorFirst: "F. Scott",
       authorLast: "Fitzgerald",
       publishDate: 1925,
-      genre: ["mystery", "historical", "fiction"],
+      genre: ["mystery", "historical", " fiction"],
     },
     {
       name: "The Hobbit",
       authorFirst: "JRR",
       authorLast: "Tolkien",
       publishDate: 1937,
-      genre: ["fantasy", "fiction"],
+      genre: ["fantasy", " fiction"],
     },
     {
       name: "Harry Potter and the Deathly Hallows",
       authorFirst: "JK",
       authorLast: "Rowling",
       publishDate: 1997,
-      genre: ["fantasy", "fiction"],
+      genre: ["fantasy", " fiction"],
     },
     {
       name: "Ulysses",
       authorFirst: "James",
       authorLast: "Joyce",
       publishDate: 1918,
-      genre: ["historical", "non-fiction"],
+      genre: ["historical", " non-fiction"],
     },
     {
       name: "War and Peace",
