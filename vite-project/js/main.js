@@ -23,6 +23,7 @@ function Insert(arr) {
     <h2 class="author">${book.authorFirst} ${book.authorLast}</h2>
     <h2 class="publishDate">${book.publishDate}</h2>
     <h2 class="genre">${book.genre}</h2>
+    <img src="${book.image}" alt="" class="card-img">
   </div>`)});
 }
 
