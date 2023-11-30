@@ -20,10 +20,10 @@ function Insert(arr) {
     DOMSelectors.card_holder.insertAdjacentHTML('afterbegin', 
     `  <div class="card">
     <h1 class="name">${book.name}</h1>
+    <img src="${book.image}" alt="" class="card-img">
     <h2 class="author">${book.authorFirst} ${book.authorLast}</h2>
     <h2 class="publishDate">${book.publishDate}</h2>
     <h2 class="genre">${book.genre}</h2>
-    <img src="${book.image}" alt="" class="card-img">
   </div>`)});
 }
 

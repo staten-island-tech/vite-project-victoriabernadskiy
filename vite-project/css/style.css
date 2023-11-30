@@ -65,8 +65,8 @@ body {
 
 
 .card {
-    width: 15vw;
-    height: 40vh;
+    width: 20vw;
+    height: 60vh;
     display: flex;
     flex-direction: column;
     background-color: var(--secondary);
@@ -110,6 +110,6 @@ body {
 
   .card-img {
     border-radius: 15px;
-    height: 40px;
-    width: 30px;
+    height: 80px;
+    width: 35px;
   }
