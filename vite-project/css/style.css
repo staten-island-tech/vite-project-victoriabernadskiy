@@ -74,7 +74,8 @@ body {
     border: 3px black;
     margin: 30px;
     margin-top: 5%;
-    border: 5px solid white;
+    border: 8px solid white;
+    border-radius: 10px;
   }
 
  
@@ -114,7 +115,7 @@ body {
   .card-img {
     border-radius: 15px;
     height: 240px;
-    width: 120px;
+    width: 140px;
     justify-content: center;
     align-items: center;
     display: flex;
